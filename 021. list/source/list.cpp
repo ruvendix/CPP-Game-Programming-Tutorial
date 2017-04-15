@@ -29,8 +29,6 @@
 // 반드시 이 헤더 파일을 포함해야 함!
 #include <list>
 
-#include <vector>
-
 void ShowItems(const std::list<std::string> &item_list);
 
 // 프로그램의 진입점
