@@ -67,8 +67,9 @@ int main()
 
 	// 맨 뒤에 있는 아이템을 두 번째 아이템으로 옮기기
 	// 두 번째 아이템은 정보가 삭제됨
-	std::cout << "<검 삭제!>\n";
+	std::cout << "<검 위치에 주먹밥 넣기!>\n";
 	item_vec[1] = item_vec.back();
+	item_vec.pop_back();
 	ShowItems(item_vec);
 
 	// 자동 종료 방지!
