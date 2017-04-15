@@ -80,7 +80,7 @@ int main()
 	// auto를 사용할 때는 자료형이 뭔지 파악해야 함!
 	// std::list<std::string>::iterator를 모른다면
 	// auto를 쓰지 말고 저것부터 연습!
-	for (auto iter = item_list.begin(); iter != item_list.end(); ++iter)
+	for (auto iter = item_list.begin(); iter != item_list.end(); )
 	{
 		// 곡괭이를 검색
 		if (*iter == "곡괭이")
@@ -94,6 +94,10 @@ int main()
 			// 
 			// erase(iter++)는 주소를 하나 넘어갈 수 있으므로 추천하지 않음
 			iter = item_list.erase(iter);
+		}
+		else
+		{
+			++iter;
 		}
 	}
 	ShowItems(item_list);
