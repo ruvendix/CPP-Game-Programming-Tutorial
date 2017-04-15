@@ -92,7 +92,9 @@ int main()
 			// 다음 위치를 알아낼 수 없음!
 			// 하지만 vector는 빈 자리가 채워지므로 ++iter로도 가능
 			// 
-			// erase(iter++)는 주소를 하나 넘어갈 수 있으므로 추천하지 않음
+			// erase(iter++)는 주소를 하나 넘어가므로 추천하지 않음
+			// erase()를 사용할 때는 ++iter를 따로 쓰는 게 좋음!
+			// 이유는 erase(iter++)처럼 주소를 하나 넘어가기 때문
 			iter = item_list.erase(iter);
 		}
 		else
