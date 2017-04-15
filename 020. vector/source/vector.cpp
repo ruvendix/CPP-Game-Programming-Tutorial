@@ -47,29 +47,29 @@ int main()
 
 	// 크기가 10인 vector 생성
 	std::vector<int> ten_vec(10);
-	std::cout << "ten_vec의 크기   : " << ten_vec.size() << std::endl;
+	std::cout << "ten_vec의 크기   : " << ten_vec.size() << std::endl << std::endl;
 
-	//// std::string을 담는 vector 생성
-	//// 그냥 대괄호를 쓰려면 C++11 이상부터 가능!
-	//std::vector<std::string> item_vec = {"장갑", "검", "방패"};
-	//ShowItems(item_vec);
+	// std::string을 담는 vector 생성
+	// 그냥 대괄호를 쓰려면 C++11 이상부터 가능!
+	std::vector<std::string> item_vec = {"장갑", "검", "방패"};
+	ShowItems(item_vec);
 
-	//// 새로운 아이템 추가
-	//std::cout << "주먹밥, 회복약 추가!\n";
-	//item_vec.push_back("주먹밥");
-	//item_vec.push_back("회복약");
-	//ShowItems(item_vec);
+	// 새로운 아이템 추가
+	std::cout << "주먹밥, 회복약 추가!\n";
+	item_vec.push_back("주먹밥");
+	item_vec.push_back("회복약");
+	ShowItems(item_vec);
 
-	//// 맨 뒤에 있는 아이템 삭제
-	//std::cout << "회복약 삭제!\n";
-	//item_vec.pop_back();
-	//ShowItems(item_vec);
+	// 맨 뒤에 있는 아이템 삭제
+	std::cout << "회복약 삭제!\n";
+	item_vec.pop_back();
+	ShowItems(item_vec);
 
-	//// 맨 뒤에 있는 아이템을 두 번째 아이템으로 옮기기
-	//// 두 번째 아이템은 정보가 삭제됨
-	//std::cout << "검 삭제!\n";
-	//item_vec[1] = item_vec.back();
-	//ShowItems(item_vec);
+	// 맨 뒤에 있는 아이템을 두 번째 아이템으로 옮기기
+	// 두 번째 아이템은 정보가 삭제됨
+	std::cout << "검 삭제!\n";
+	item_vec[1] = item_vec.back();
+	ShowItems(item_vec);
 
 	// 자동 종료 방지!
 	system("pause");
