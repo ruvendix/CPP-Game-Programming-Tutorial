@@ -11,7 +11,7 @@
  * list는 vector처럼 크기가 늘어날 수도 있고,
  * 줄어들 수도 있는 유연한 자료구조입니다.
  * list는 삽입과 삭제가 빠르지만, 검색은 느린 자료구조입니다.
- * 간단하게 push_back(), push_front(), begin(), end(), remove() 정도만 알아봅니다.
+ * 간단하게 push_back(), push_front(), begin(), end(), remove(), erase() 정도만 알아봅니다.
  */
 
 // std::cout의 출력을 도와주는 헤더 파일
