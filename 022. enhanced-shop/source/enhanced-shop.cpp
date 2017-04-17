@@ -60,6 +60,7 @@ int main()
 	player.AddItem(Item("나무 막대기", 10, 1, 1), true);
 	player.AddItem(Item("회복약", 50, 2, 3), true);
 
+	// 상점을 여러 개 운영하기 위한 list
 	std::list<Shop> shops;
 	InitShops(shops);
 
@@ -78,6 +79,7 @@ int main()
 		}
 		else
 		{
+			// 유효한 상점인지 확인
 			if (VaildShop(shops, input_name, player) == false)
 			{
 				std::cout << "잘못 입력했습니다!\n";
@@ -97,6 +99,7 @@ int main()
 	return 0;
 }
 
+// 상점 및 상품 초기화
 void InitShops(std::list<Shop> &shops)
 {
 	shops.push_back(Shop("잡화점", 2000));
@@ -118,6 +121,7 @@ void InitShops(std::list<Shop> &shops)
 	shops.back().AddItem(Item("볶음밥", 70, 14, 10), true);
 }
 
+// 모든 상점 출력
 void ShowShops(const std::list<Shop> &shops)
 {
 	int num = 1;
@@ -128,12 +132,14 @@ void ShowShops(const std::list<Shop> &shops)
 	std::cout << std::endl;
 }
 
+// 유효한 상점인지 확인
 bool VaildShop(std::list<Shop> &shops, const std::string &shop_name, Player &player)
 {
 	for (std::list<Shop>::iterator i = shops.begin(); i != shops.end(); ++i)
 	{
 		if ((*i).get_name() == shop_name)
 		{
+			// 유효한 상점이면 상점에 들어감
 			(*i).IntoShop(player);
 			return true;
 		}

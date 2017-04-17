@@ -27,6 +27,8 @@ public:
 	Item(const std::string &name, int price, int code, int count)
 		: name_(name), price_(price), code_(code), count_(count)
 	{
+		// 상품의 개수가 0개 미만이면 0,
+		// 99개 초과하면 99개로 설정
 		if (count < 0)
 		{
 			count_ = 0;
@@ -37,6 +39,7 @@ public:
 		}
 	}
 
+	// 오버로딩된 생성자
 	Item(const std::string &name) : name_(name) {}
 
 	// 상품을 하나 추가
