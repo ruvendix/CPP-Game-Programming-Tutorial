@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "025. binary", "025. binary\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "026. type-casting", "026. type-casting\026. type-casting.vcxproj", "{83FCE03F-5B95-4A23-A687-07B15E2228E9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "027. switch-case", "027. switch-case\027. switch-case.vcxproj", "{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{83FCE03F-5B95-4A23-A687-07B15E2228E9}.Release|x64.Build.0 = Release|x64
 		{83FCE03F-5B95-4A23-A687-07B15E2228E9}.Release|x86.ActiveCfg = Release|Win32
 		{83FCE03F-5B95-4A23-A687-07B15E2228E9}.Release|x86.Build.0 = Release|Win32
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Debug|x64.ActiveCfg = Debug|x64
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Debug|x64.Build.0 = Debug|x64
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Debug|x86.ActiveCfg = Debug|Win32
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Debug|x86.Build.0 = Debug|Win32
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Release|x64.ActiveCfg = Release|x64
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Release|x64.Build.0 = Release|x64
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Release|x86.ActiveCfg = Release|Win32
+		{B80C0445-7AE1-4EB9-B750-FFABF5AB5A0C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
