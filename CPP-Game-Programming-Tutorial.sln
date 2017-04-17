@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "023. fileIO-standardIO", "0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "024. printf-char-string", "024. printf-char-string\024. printf-char-string.vcxproj", "{8094EBE9-B166-4BAC-BE90-FED55EEF5D0C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "025. binary", "025. binary\025. binary.vcxproj", "{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{8094EBE9-B166-4BAC-BE90-FED55EEF5D0C}.Release|x64.Build.0 = Release|x64
 		{8094EBE9-B166-4BAC-BE90-FED55EEF5D0C}.Release|x86.ActiveCfg = Release|Win32
 		{8094EBE9-B166-4BAC-BE90-FED55EEF5D0C}.Release|x86.Build.0 = Release|Win32
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Debug|x64.ActiveCfg = Debug|x64
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Debug|x64.Build.0 = Debug|x64
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Debug|x86.Build.0 = Debug|Win32
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Release|x64.ActiveCfg = Release|x64
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Release|x64.Build.0 = Release|x64
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Release|x86.ActiveCfg = Release|Win32
+		{B1CD2D04-67C1-440D-9B29-69F39DFC3A32}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
