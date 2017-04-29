@@ -1,4 +1,4 @@
-/* 
+/*
  * switch-case.cpp
  *
  *       Copyright (c) Ruvendix. 모든 저작권은 본인에게 있습니다.
@@ -17,9 +17,9 @@
  * if ~ else if, switch ~ case, 룩업 테이블 이렇게 3개를 보여드릴게요.
  */
 
-// 표준 입출력을 위한 C++의 헤더 파일
-// using namespace std;는 이용하지 않음!
-// cstdio도 포함되어있으므로 C 스타일의 표준 입출력도 사용 가능!
+ // 표준 입출력을 위한 C++의 헤더 파일
+ // using namespace std;는 이용하지 않음!
+ // cstdio도 포함되어있으므로 C 스타일의 표준 입출력도 사용 가능!
 #include <iostream>
 
 // std::string을 위한 헤더 파일
@@ -50,7 +50,7 @@ void TestIfStatement(const char player)
 		printf("나무에 부딪혔습니다!\n");
 	}
 	else if (player == 'C' ||
-		     player == 'D')
+		player == 'D')
 	{
 		printf("여행자와 부딪혔습니다!\n");
 	}
@@ -73,9 +73,9 @@ void TestSwitchCaseStatement(const char player)
 	// label의 대표적인 예는 goto문
 	switch (player)
 	{
-	// case에는 상수만 가능!
-	// const를 붙이면 case에도 사용 가능!
-	// 단! 상수값이 무조건 있어야 함!
+		// case에는 상수만 가능!
+		// const를 붙이면 case에도 사용 가능!
+		// 단! 상수값이 무조건 있어야 함!
 	case kWall:
 		printf("벽에 부딪혔습니다!");
 		break;
@@ -89,15 +89,15 @@ void TestSwitchCaseStatement(const char player)
 		printf("나무에 부딪혔습니다!");
 		break;
 
-	// case가 겹치면
-	// 둘 다 처리됨
+		// case가 겹치면
+		// 둘 다 처리됨
 	case 'C':
 	case 'D':
 		printf("여행자와 부딪혔습니다!");
 		break;
 
-	// 기본 경우
-	// case에 하나도 해당되지 않을 경우
+		// 기본 경우
+		// case에 하나도 해당되지 않을 경우
 	default:
 		printf("아무런 이상이 없습니다.");
 		break;
@@ -107,10 +107,10 @@ void TestSwitchCaseStatement(const char player)
 
 void TestLookupTable(const char player)
 {
-	std::vector<char> object_vec = {'#', 'S', 'O', 'T', 'C', 'D'};
+	std::vector<char> object_vec = { '#', 'S', 'O', 'T', 'C', 'D' };
 	std::vector<std::string> guide_vec =
-		{"벽에 부딪혔습니다!", "뱀을 만났습니다!", "구멍에 빠졌습니다!",
-		 "나무에 부딪혔습니다!", "여행자와 부딪혔습니다!", "여행자와 부딪혔습니다!"};
+	{ "벽에 부딪혔습니다!", "뱀을 만났습니다!", "구멍에 빠졌습니다!",
+	 "나무에 부딪혔습니다!", "여행자와 부딪혔습니다!", "여행자와 부딪혔습니다!" };
 
 	// 객체 배열을 처음부터 검사
 	// 원래 룩업 테이블은 상수를 이용하기 때문에
@@ -140,9 +140,9 @@ void TestLookupTable(const char player)
 int main()
 {
 	system("title switch ~ case문 실험하기");
-	
+
 	// 소스 코드를 줄이기 위해 룩업 테이블 이용
-	std::vector<char> test_vec = {'#', 'S', 'O', 'T', 'C', 'D', '&', '*'};
+	std::vector<char> test_vec = { '#', 'S', 'O', 'T', 'C', 'D', '&', '*' };
 
 	//if ~else if로 처리
 	for (int i = 0; i < static_cast<int>(test_vec.size()); ++i)
