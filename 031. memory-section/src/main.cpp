@@ -6,8 +6,6 @@
  * 파일 설명 : 메모리 영역 중 Data와 Stack을 알아봅니다.
  */
 
-#include <iostream>
-
 int g_num; // 전역 변수, 초기화하지 않으면 0, BSS 영역
 
 // 전역 변수는 예약된 스택 영역 크기 1MB 넘는 게 가능
