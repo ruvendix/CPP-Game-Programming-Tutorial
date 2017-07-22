@@ -8,12 +8,12 @@
 
 int g_num; // 전역 변수, 초기화하지 않으면 0, BSS 영역
 
-// 전역 변수는 예약된 스택 영역 크기 1MB 넘는 게 가능
+// 전역 변수는 예약된 Stack 영역 크기 1MB 넘는 게 가능
 int g_killStack[1000000];
 
 int main()
 {
-	int num; // 지역 변수, stack 영역
+	int num; // 지역 변수, Stack 영역
 
 	// Stack 영역의 예약된 크기는 1MB
 	// 살짝 넘는 건 가능하지만 2MB 이상은 불가능
