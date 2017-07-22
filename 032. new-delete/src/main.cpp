@@ -6,8 +6,6 @@
  * 파일 설명 : 힙 메모리를 다루는 new와 delete를 테스트합니다.
  */
 
-// 4. 참조자와 포인터, 참조자는 const 참조 포인터는 값 변경
-
 #include <cassert>
 #include <iostream>
 
