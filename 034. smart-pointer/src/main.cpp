@@ -38,13 +38,16 @@ int main()
 	//// 소유권을 공유하는 스마트 포인터
 	//// 소유권을 공유할수록 레퍼런스 카운트가 증가됨
 	//std::shared_ptr<Data> pOldData = std::make_shared<Data>(100);
-	//
+	//assert(pOldData);
+
 	//// 일반 포인터에 대입하는 경우에는 get() 메서드 이용
 	//Data* pOriginal = pOldData.get();
+	//assert(pOriginal);
 
 	//// 스마트 포인터에는 그냥 대입 가능
 	//// 복사가 발생하면 레퍼런스 카운트 증가
 	//std::shared_ptr<Data> pNewData = pOldData;
+	//assert(pNewData);
 
 	//printf(" pOldData의 역참조값 : %d\n", pOldData->GetNum());
 	//printf("pOriginal의 역참조값 : %d\n", pOriginal->GetNum());
@@ -56,16 +59,19 @@ int main()
 	//// 소유권을 공유하지 않는 스마트 포인터
 	//// 소유권 양도만 가능
 	//std::unique_ptr<Data> pUniqueData = std::make_unique<Data>(200);
+	//assert(pUniqueData);
 
 	//// 일반 포인터에 대입하는 경우에는 get() 메서드 이용
 	//// 소유권 공유가 아니라 순수 포인터만 가져오는 방법
 	//Data* pOriginal = pUniqueData.get();
+	//assert(pOriginal);
 
 	//// 소유권 공유는 불가능
 	////std::unique_ptr<Data> pNewUniqueData = pUniqueData;
 
 	//// 소유권 양도는 가능
 	//std::unique_ptr<Data> pNewUniqueData = std::move(pUniqueData);
+	//assert(pNewUniqueData);
 
 	//// 소유권을 양도하면 pUniqueData는 더 이상 쓸모가 없음
 	////printf(" pOldData의 역참조값 : %d\n", pUniqueData->GetNum());
