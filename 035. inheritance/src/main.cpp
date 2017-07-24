@@ -15,7 +15,8 @@
 
 int main()
 {
-	std::unique_ptr<monster::Spider> pSpider = std::make_unique<monster::Spider>("거미");
+	std::unique_ptr<monster::Spider> pSpider =
+		std::make_unique<monster::Spider>("거미");
 
 	pSpider->Attack();
 	pSpider->Move();
