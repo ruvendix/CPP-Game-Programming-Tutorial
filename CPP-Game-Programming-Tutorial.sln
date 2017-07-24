@@ -73,6 +73,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "034. smart-pointer", "034. 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "035. inheritance", "035. inheritance\035. inheritance.vcxproj", "{E40695D1-ED13-47C9-95EB-4D28A372B4A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "036. polymorphism-virtual", "036. polymorphism-virtual\036. polymorphism-virtual.vcxproj", "{78BE731B-395C-4A6E-AC18-A0C290A0766A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -361,6 +363,14 @@ Global
 		{E40695D1-ED13-47C9-95EB-4D28A372B4A6}.Release|x64.Build.0 = Release|x64
 		{E40695D1-ED13-47C9-95EB-4D28A372B4A6}.Release|x86.ActiveCfg = Release|Win32
 		{E40695D1-ED13-47C9-95EB-4D28A372B4A6}.Release|x86.Build.0 = Release|Win32
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Debug|x64.ActiveCfg = Debug|x64
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Debug|x64.Build.0 = Debug|x64
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Debug|x86.ActiveCfg = Debug|Win32
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Debug|x86.Build.0 = Debug|Win32
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Release|x64.ActiveCfg = Release|x64
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Release|x64.Build.0 = Release|x64
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Release|x86.ActiveCfg = Release|Win32
+		{78BE731B-395C-4A6E-AC18-A0C290A0766A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
