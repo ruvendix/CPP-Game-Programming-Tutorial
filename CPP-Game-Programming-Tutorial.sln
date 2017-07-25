@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "036. polymorphism-virtual",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "037. pure-abstract", "037. pure-abstract\037. pure-abstract.vcxproj", "{ADCBCA73-3E6A-48C6-95AE-EF3219040DA6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "038. static", "038. static\038. static.vcxproj", "{AFA4698A-0993-4398-A930-C0CDED146EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -381,6 +383,14 @@ Global
 		{ADCBCA73-3E6A-48C6-95AE-EF3219040DA6}.Release|x64.Build.0 = Release|x64
 		{ADCBCA73-3E6A-48C6-95AE-EF3219040DA6}.Release|x86.ActiveCfg = Release|Win32
 		{ADCBCA73-3E6A-48C6-95AE-EF3219040DA6}.Release|x86.Build.0 = Release|Win32
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Debug|x64.ActiveCfg = Debug|x64
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Debug|x64.Build.0 = Debug|x64
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Debug|x86.ActiveCfg = Debug|Win32
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Debug|x86.Build.0 = Debug|Win32
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Release|x64.ActiveCfg = Release|x64
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Release|x64.Build.0 = Release|x64
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Release|x86.ActiveCfg = Release|Win32
+		{AFA4698A-0993-4398-A930-C0CDED146EE7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
