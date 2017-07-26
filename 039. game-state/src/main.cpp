@@ -34,7 +34,7 @@ int GameStateCheck();
 
 int main()
 {
-	std::uniform_int_distribution<int> randomIndex(0, 6);
+	std::uniform_int_distribution<int> randomValue(0, 6);
 	std::default_random_engine randomEngine;
 
 	time_t oldTime = clock();
@@ -50,7 +50,7 @@ int main()
 		{
 			oldTime = newTime;
 
-			g_gameState = static_cast<GameState>(randomIndex(randomEngine));
+			g_gameState = static_cast<GameState>(randomValue(randomEngine));
 			GameStateCheck();
 		}		
 	}
